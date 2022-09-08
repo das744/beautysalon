@@ -1,0 +1,82 @@
+/* price section */
+
+.price-section{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+   text-align: center;
+   margin-top: 20px;
+   }
+.price-section h2 {
+   
+    text-align: center;
+    font-size: 30px;
+    margin-top: 50px;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+    }
+  .price-section .price-info{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    margin: 30px 20px;
+     
+  }
+  
+  .prices-card .card{
+    border: none;
+    margin: 10px 10px;
+    Box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+  }
+  .prices-card .card-body h3{
+    text-align: center;
+    font-weight: 400;
+  }
+  
+  .prices-card .card-body ul li{
+    list-style: none;
+  }
+  .prices-card .card:hover{
+    Box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+   color:rgb(5, 5, 5);
+   font-weight: 400;
+    background:var(--secondary);
+    color: white;
+    font-weight: 400;
+    transform: scaleY(1.03);
+  }
+  
+ /* Media Query for Mobile Devices */
+ @media screen and (min-width: 412px) {
+    .price-policy{
+       text-align: center;
+    }
+         
+}
+
+ @media (max-width: 480px) {
+     .price-policy{
+        text-align: center;
+     }
+          
+}
+  
+/* Media Query for low resolution  Tablets, ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+   
+}
+  
+/* Media Query for Tablets ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+   
+}
+  
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px){
+    
+}
+  
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+    
+}

@@ -1,0 +1,70 @@
+
+.hero_section{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('../assets/woman.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    animation: image-change linear 2s;
+    position: relative;
+   
+    
+  }
+  .hero_section .design1{
+    content:"";
+    position: absolute;
+    top: 10px;
+    left:20px;
+    color: var(--secondary);
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+  }
+ 
+  .hero_section .hero_content h1{
+    padding-top: 300px;
+    color: var(--secondary);
+    text-transform: capitalize;
+    animation: 3s slide-left;
+  }
+  .hero_section .hero_content p{
+    animation: 3s slide-right;
+    color: white;
+  }
+ 
+
+  @keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
+
+
+        
+.arrow {
+  width: 15px;
+  height: 15px;
+  border: 3px solid var(--secondary);
+  border-left: 0;
+  border-top: 0;
+  margin-top: 200px;
+  margin-left: 500px;
+  animation: up-down 3s ease infinite;
+}
+.arrow-down { 
+  transform: rotate(45deg); 
+}
+/* @keyframes up-down{
+        0%   { transform: translateY(0); }
+        50%  { transform: translateY(-10px); }
+        100% { transform: translateY(0px);}
+
+} */
+    

@@ -1,0 +1,110 @@
+/* about section */
+.about_section{
+    padding-top: 100px;
+    height: 100%;
+    width: 100vw;
+    margin-bottom: 100px;
+    text-align: center;
+   
+  
+  }
+  .about_section .about_info{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    margin: 0 10px;
+  
+  }
+  .about_section .about_us h2{
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  display: inline-flex;  /* make line short under text */
+  }
+  /* .about_section .about_us h2::after{
+    content: "";
+    position: absolute;
+    background-color: var(--secondary);
+    height: 4px;
+    bottom:-10px;
+    left:0; 
+    right: 0; 
+  
+  } */
+  .about_section .container{
+    padding-top: 100px;
+  }
+  .about_section .container h3{
+    color: var(--secondary);
+    font-size: 40px;
+  }
+  
+  .about_section .about_img img{
+    border-radius: 6px;
+    height: 400px;
+    width: 550px;
+    animation: 3s slide-right;
+    overflow: hidden;
+    
+  }
+  .about_section .about_content{
+    /* padding-left: 100px; */
+    animation: 3s slide-right;
+  }
+  .about_section .about_content p{
+    font-size: 20px;
+  }
+  
+  
+  
+  
+  /* media query for about section */
+  @media only screen and (max-width: 300px){
+    .about_section{
+      margin-bottom: 100px;
+    }
+    .about_section .about_img img{
+      width: 200px;
+      height: 200px;
+    
+    }
+    
+  }
+  @media only screen and (max-width: 375px){
+  .about_section .about_content {
+    padding-left: 0px;
+    
+  }
+  }
+  @media only screen and (max-width: 900px){
+    .about_section .about_img{
+      margin-top: 20px;
+      height: 40vh;
+    }
+    .about_section{
+      margin-bottom: 100px;
+    }
+    .about_section .about_img img{
+      width: 300px;
+      height: 300px;
+    }
+    .about_section .about_content {
+      padding-left: 0px;
+      
+    }
+  
+  }
+  @media only screen and (max-width: 1200px){
+    .about_section .about_img img{
+      width: 400px;
+      height: 400px;
+    }
+    .about_section .about_content p{
+      font-size: 15px;
+    }
+  }
+  
+  
+  /* about section finish */
+  
